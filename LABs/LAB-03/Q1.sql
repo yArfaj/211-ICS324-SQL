@@ -3,13 +3,13 @@ SELECT
     lname,
     address
 FROM
-    EMPLOYEE
+    employee
 WHERE
     dno = (
         SELECT
             dnumber
         FROM
-            DEPARTMENT
+            department
         WHERE
             dname = 'Research'
     );
